@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Strata Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nunito" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <script>
+        $(function() {
+            $("#animation")
+                    .stickOnScroll({
+                        topOffset:      $("#main-info").outerHeight(),
+                        footerElement:  $("#getting-started"),
+                        topOffset: 0,
+                        bottomOffset:   100
+                    });
+        });
+    </script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-position">
+    <nav id="navbar-position" class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-dark">
+        <a class="navbar-brand" href="#masthead">Strata</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#masthead">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main-info">What is Strata?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#getting-started">Getting Started</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#facebook">Applications</a>
+                </li>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="masthead">
+        <div class="container-fluid">
+            <div class="row overlay">
+                <div class="col-md-12" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                    <h1>No, not the casserole</h1>
+                    <p>Strata is a new social system, created by people, for people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-info">
+        <div id="animation">
+            <div id="time"></div>
+            <div id="scroll"></div>
+            <video id="strata-video" tabindex="0" autobuffer="autobuffer" preload="preload"><source src="./assets/Strata.mp4" type="video/mp4"></source>
+            </video>
+        </div>
+    </section>
+<!--     Save for recovery -->
+<!-- <section id="main-info">
+        <div class="container-fluid animation-block">
+            <div class="row">
+                <div class="col-md-2" data-scroll="toggle(.moveRightIn, .moveRightOut)">
+                    <div class="stratum" id="stratum1"></div>
+                    <div class="stratum" id="stratum2"></div>
+                    <div class="stratum" id="stratum3"></div>
+                    <div class="stratum" id="stratum4"></div>
+                    <div class="stratum" id="stratum5"></div>
+                    <div class="stratum" id="stratum6"></div>
+                    <div class="stratum" id="stratum7"></div>
+                    <div class="stratum" id="stratum8"></div>
+                    <div class="stratum" id="stratum9"></div>
+                </div>
+                <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                    <h1>Meet your Strata</h1>
+                    <p>Your Strata is who you are: your history, your groups, and your Identity.</p>
+                    <p>It’s a visual, social display, kinda like a peacock. And who doesn’t want to be a freakin’ peacock? </p>
+                    <p>Strata can help you navigate your life: from the coffee shops you visit, to who pops on your Tinder feed, it’ll help you find social spaces where you can meet people just like you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info2">
+        <div class="container-fluid animation-block">
+            <div class="row">
+                <div class="col-md-2" data-scroll="toggle(.moveRightIn, .moveRightOut)">
+                    <div class="stratum" id="stratum1"></div>
+                    <div class="stratum" id="stratum2" data-scroll="toggle(.moveRightMiniIn, .moveRightMiniOut)"></div>
+                    <div class="stratum" id="stratum3"></div>
+                    <div class="stratum" id="stratum4"></div>
+                    <div class="stratum" id="stratum5"></div>
+                    <div class="stratum" id="stratum6"></div>
+                    <div class="stratum" id="stratum7"></div>
+                    <div class="stratum" id="stratum8"></div>
+                    <div class="stratum" id="stratum9"></div>
+                </div>
+                <div class="col-md-10" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                    <h1>This is a Stratum</h1>
+                    <p>Stratum holds the information of each section of your Strata, and are automatically selected based on your responses to your Initial Questionaire.</p>
+                    <p>Some Strata are continuous, like your age, or your income bracket. While some Strata are discrete, like your religion or your level of education</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<!--     Still building this section-->
+    <!--     <section id="info3">
+            <div class="container-fluid animation-block">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <p class="hStrata"><div id="stratum1" class="stratum"></div></p>
+                        <p class="hStrata"><div id="stratum1" class="stratum"></div></p>
+                </div>
+            </div>
+        </section> -->
+    <section id="getting-started">
+        <div class="container-fluid">
+            <div class="row" style="min-width: 100vw">
+                    <h1>Ready for your Strata?</h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#questionnaire">Start your Questionnaire</button>
+                </div>
+                <div class="modal fade" id="questionnaire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Strata Initial Questionnaire</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1"></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="facebook">
+        <div class="container-fluid">
+            <div class="row overlay">
+                <div class="col-sm-7">
+                    <h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">What can Strata Do?</h1>
+                    <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)">Your Strata can be integrated with your Facebook and Twitter accounts, so your friends and family can stay up-to-date on who you are. Strata can also help you find new friends by connecting you with people who have similar a similar Strata!</p>
+                </div>
+                <div class="col-md-5">
+                    <img data-scroll="toggle(.fromLeftIn, .fromLeftOut)" src="./assets/facebook.png" class="photo-block" alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tinder">
+        <div class="container-fluid">
+            <div class="row overlay">
+                <div class="col-sm-7">
+                    <h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">What can Strata Do?</h1>
+                    <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)">Strata can also connect with today’s dating apps, helping you make quality connections with the people you want to connect with.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="business">
+        <div class="container-fluid">
+            <div class="row overlay">
+                <div class="col-sm-7">
+                    <h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">What can Strata Do?</h1>
+                    <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)">Strata can also connect with today’s dating apps, helping you make quality connections with the people you want to connect with.</p>
+                </div>
+                <div class="col-md-5" >
+                    <img data-scroll="toggle(.fromLeftIn, .fromLeftOut)" src="./assets/maps.png" class="photo-block" alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/video-scroll.js"></script>
+    <script src="./js/jquery.stickOnScroll.js"></script>
+    <script>
+    window.counter = function() {
+        // this refers to the html element with the data-scroll-showCallback tag
+        var span = this.querySelector('span');
+        var current = parseInt(span.textContent);
+
+        span.textContent = current + 1;
+    };
+
+    document.addEventListener('DOMContentLoaded', function(){
+      var trigger = new ScrollTrigger({
+        offset: {
+            x: 0,
+            y: 50
+        },
+      });
+    });
+    </script>
+</body>
+
+</html>
