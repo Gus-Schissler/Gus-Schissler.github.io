@@ -1,0 +1,47 @@
+html {
+    font-size: 1em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+body {
+    margin: 0;
+}
+
+
+#backgroundGradient{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+#canvas {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+.boundary {
+    fill-opacity: 0;
+    stroke: #fff;
+    opacity: .3;
+    stroke-width: 2;
+    stroke-dasharray: 10;
+    stroke-linecap: round;
+    transition: 2s ease-out;
+
+}
+
+.boundary-text {
+    fill: #fff;
+    opacity: .5;
+}
+
+.boundary:hover {
+    opacity: .6;
+    transition: 2s ease-out;
+}
