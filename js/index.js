@@ -1,3 +1,9 @@
+(function () {
+	
+	scrollConverter.activate();
+
+}());
+
 /*background svg initialization*/
 var background = Snap("#backgroundGradient");
 Snap.load("assets/background.svg", function(f) {
@@ -7,7 +13,7 @@ Snap.load("assets/background.svg", function(f) {
 /* begin canvas section */
 var canvas = Snap("#canvas");
 canvas.attr( {
-	viewBox: "-960, -540, 1920, 1080"
+	viewBox: "-960, -540, 2920, 1080"
 });
 
 for (var i = 0; i < 4; i++) {
