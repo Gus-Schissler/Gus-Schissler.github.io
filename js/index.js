@@ -1,8 +1,3 @@
-(function () {
-	
-	scrollConverter.activate();
-
-}());
 
 /*background svg initialization*/
 var background = Snap("#backgroundGradient");
@@ -13,19 +8,19 @@ Snap.load("assets/background.svg", function(f) {
 /* begin canvas section */
 var canvas = Snap("#canvas");
 canvas.attr( {
-	viewBox: "-960, -540, 2920, 1080"
+	viewBox: "0, 0, 1920, 3000"
 });
 
-for (var i = 0; i < 4; i++) {
-	var yearInt = 2014 + i;
-	boundaryCircle = canvas.circle(0, 0, 512 - (128 * i)).addClass("boundary");
-	boundaryText = canvas.text(512 - (128 * i), 5, yearInt).addClass("boundary-text");
-	canvas.g(boundaryCircle, boundaryText).attr({id: "boundary" + i });
-};
+// for (var i = 0; i < 4; i++) {
+// 	var yearInt = 2014 + i;
+// 	boundaryCircle = canvas.circle(0, 0, 512 - (128 * i)).addClass("boundary");
+// 	boundaryText = canvas.text(512 - (128 * i), 5, yearInt).addClass("boundary-text");
+// 	canvas.g(boundaryCircle, boundaryText).attr({id: "boundary" + i });
+// };
 
 
 // core button
-var button = canvas.circle(0, 0, 10).attr({fill: "white", opacity: ".75"});
+var button = canvas.circle(20, 1500, 10).attr({fill: "white", opacity: ".75"});
 
 button.hover(
 	function() {
@@ -50,7 +45,7 @@ function expand() {
 	this.animate({"transform": "s 1 1"}, 1000, mina.elastic);
 	} else {
 	this.animate({"transform": "s 2 2"}, 1000, mina.elastic);
-	drawPortfolio();
+	//drawPortfolio();
 	};
 	masterToggle = !masterToggle;
 };

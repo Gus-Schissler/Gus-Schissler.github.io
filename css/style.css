@@ -1,15 +1,17 @@
 html {
     font-size: 1em;
 /*    overflow-y: hidden;
+*/    overflow-x: hidden;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */*/
+    user-select: none; /* Standard */
 }
 
 body {
     margin: 0;
-    width: 5000px;
+    height: 2160px;
+    background-color: #2D2D2D;
 }
 
 
@@ -32,7 +34,7 @@ body {
     stroke-width: 2;
     stroke-dasharray: 10;
     stroke-linecap: round;
-    transition: 2s ease-out;
+    transition: 0.25s ease-out;
 
 }
 
@@ -43,5 +45,5 @@ body {
 
 .boundary:hover {
     opacity: .6;
-    transition: 2s ease-out;
+    transition: 0.25s ease-out;
 }
