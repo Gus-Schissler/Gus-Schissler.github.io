@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { 
+	margin: 0px;
+}
+
+.hero-image{
+	margin: 0;
+	padding: 0;
+	background-image: url("assets/background.jpg");
+	height: 100vh;
+	width: 100vw;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.notificationText{
+	font-family: 'Saira', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	color: #e6eaed;
+	min-width: 100vw;	
+	display: flex;
+	justify-content: center
+
+}
+.notificationSubText{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	color: #e6eaed;
+	min-width: 100vw;	
+	display: flex;
+	justify-content: center
+
+}
+
+@media (max-width: 1920px){
+
+}
+
+@media (max-width: 800px){
+	.notificationText{
+		font-size: 1.5em;
+	}
+	.notificationSubText{
+		font-size: 1em;
+	}
+	
+}
+
+@media (max-width: 620px){
+	.notificationText{
+		font-size: 1em;
+	}
+	.notificationSubText{
+		font-size: 1em;
+		
+	}
+}
